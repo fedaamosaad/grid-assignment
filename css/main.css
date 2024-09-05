@@ -1,0 +1,404 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "iphone iphone heading heading"
+        "keyboard imac imac icloud"
+        "games choice choice icloud"
+        "twitter popular tv tv";
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    color: #333;
+    font-size: 14px;
+
+}
+
+.parent img {
+    width: 70%;
+    display: block;
+}
+
+span {
+    font-family: 'Montserrat', sans-serif;
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.iphone {
+    grid-area: iphone;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-inline: 20px;
+}
+
+.iphone-p {
+    width: 32%;
+}
+
+h3 {
+    font-family: 'arvo', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.iphone-p p {
+    font-size: 14px;
+    color: #9fa3a7;
+}
+
+.iphone-pic {
+    width: 40%;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.iphone-pic img {
+    width: 100%;
+    display: block;
+
+}
+
+.heading {
+    grid-area: heading;
+    background-color: #f7f8f9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+}
+.heading a{
+    color: #35cfed;
+}
+h1 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    width: 90%;
+}
+
+
+
+.keyboard {
+    grid-area: keyboard;
+    background-color: #f05638;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fffbfb;
+    text-align: center;
+    flex-direction: column;
+}
+
+.keyboard h3 {
+    width: 90%;
+    font-weight: 900;
+}
+
+.keyboard a {
+    color: #ffc80a;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.keyboard img {
+    width: 100%;
+}
+
+.games {
+    grid-area: games;
+    align-items: center;
+    background-color: #f7f8f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.games img {
+    position: relative;
+    left: -30px
+}
+
+.games h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 40%;
+    text-align: center;
+}
+
+.games a {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    color: #27b9c2;
+}
+
+.imac {
+    grid-area: imac;
+    display: flex;
+    overflow: hidden;
+    padding-top: 40px;
+    justify-content: space-around;
+}
+
+.imac-left,
+.imac-right {
+    width: 50%;
+
+}
+
+.imac-left img {
+    width: 100%;
+    transform: translatex(-100px);
+}
+
+.imac-left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.imac-right p {
+    width: 80%;
+    color: #9fa3a7;
+}
+
+.imac-right a {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #27b9c2;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.imac h3 {
+    width: 70%;
+}
+
+.twitter {
+    grid-area: twitter;
+    align-items: center;
+    background-color: #38d5f4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter img {
+    width: 50px;
+
+}
+
+.twitter-cont {
+    display: flex;
+    width: 240px;
+    height: 240px;
+    padding-inline: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #35cfed;
+    text-align: center;
+}
+
+.icloud {
+    grid-area: icloud;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8f76bc;
+    color: #fff;
+}
+
+.icloud p {
+    width: 70%;
+    line-height: 25px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.icloud a {
+    background-color: #ffc80a;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: black;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+
+}
+
+.circle span {
+    background-color: #ffffff14;
+    color: #ffff;
+    font-size: 10px;
+    border-radius: 30px;
+    padding-block: 3px;
+    padding-inline: 10px;
+
+}
+
+.circle img {
+    margin-top: 10px;
+}
+
+.circle i {
+    color: gold;
+}
+
+.circle h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #8166b0;
+    width: 370px;
+    height: 370px;
+    margin-top: 20px;
+
+}
+
+.icloud h2 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+
+.choice {
+    grid-area: choice;
+    background-color: #93b6b7;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-image: url(../images/5bc2f42d5a5ed97dab707e7e_UX.png);
+    background-size: 80%;
+    background-position: 50% 100%;
+    position: relative;
+}
+
+.choice span {
+    color: #fff;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    padding-inline: 10px;
+    border-radius: 5px;
+    background-color: #fa684f;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.choice h3 {
+    width: 40%;
+    margin: auto;
+    padding-block: 30px;
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.choice img {
+    width: 85%;
+    position: relative;
+    left: -30px
+}
+
+.popular {
+    grid-area: popular;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f7f8f9;
+
+}
+
+.popular span {
+    background-color: #7bc424;
+    color: #fff;
+    padding-inline: 10px;
+    border-radius: 5px;
+
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.popular h3 {
+    width: 80%;
+}
+
+.tv {
+    grid-area: tv;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c2c2c;
+    color: #fff;
+
+}
+
+.tv img {
+    position: relative;
+    left: -80px;
+    width: 40%;
+}
+
+.tv h3 {
+    width: 30%;
+}

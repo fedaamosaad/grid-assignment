@@ -1,0 +1,154 @@
+@media(max-width:991px) {
+    .parent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "heading heading"
+            "iphone iphone"
+            "keyboard games"
+            "imac imac"
+            "twitter icloud"
+            "choice icloud"
+            "popular popular"
+            "tv tv";
+        grid-template-rows: auto 1fr 1fr 1fr auto auto auto auto;
+    }
+
+    .heading h1 {
+        font-size: 35px;
+        width: 60%;
+        margin-block: 20px;
+        line-height: 50px;
+    }
+
+    .heading {
+        flex-direction: column;
+    }
+
+    .heading span {
+        margin-top: 20px;
+    }
+
+    .iphone-pic {
+        width: 30%;
+    }
+
+    .keyboard img {
+        width: 70%;
+    }
+
+    .keyboard h3 {
+        width: 60%;
+    }
+
+    .games h3 {
+        width: 60%;
+    }
+
+    .games img {
+        width: 55%;
+    }
+
+    .imac-right p {
+        margin-block: 30px;
+    }
+
+    .imac-left-cont {
+        width: 60%;
+        position: relative;
+        left: 90px;
+        top: 60px;
+    }
+
+    .imac img {
+        position: relative;
+        left: -70px;
+    }
+
+    .popular {
+        padding-block: 40px;
+    }
+
+    .tv img {
+        width: 30%;
+        left: -100px;
+    }
+}
+
+@media(max-width:583px) {
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-areas: "heading"
+            "iphone"
+            "keyboard"
+            "games"
+            "imac"
+            "twitter"
+            "choice"
+            "icloud"
+            "popular"
+            "tv";
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto ;
+    }
+
+    .heading {
+        padding-inline: 0px;
+    }
+    .heading h1 {
+        width: 100%;
+        font-size: 43px;
+    }
+   .iphone {
+        flex-direction: column;
+    }
+    .iphone-p{
+        width: 90%;
+        padding-top: 40px;
+    }
+    .iphone-pic{
+        width: 65%;
+        position: relative;
+        left: -30px;
+    }
+.keyboard img{
+    width: 80%;
+}
+.games{
+    padding-block: 30px;
+}
+.imac{
+    flex-direction: column;
+}
+.imac-left{
+    width: 100%;
+    max-width: none;
+    margin-bottom: 30px;
+padding-left: 15px;
+}
+.imac-left-cont{
+        position: static;
+        width: 100%;
+
+}
+.imac img{
+    width: auto;
+}
+.imac-right{
+    width: 100%;
+    padding-inline: 10px;
+    padding-bottom: 20px;
+}
+.popular h3{
+    width: 70%;
+}
+.tv{
+    flex-direction: column;
+}
+.tv img{
+    width: 70%;
+    left: -50px;
+}
+.tv h3{
+    width: 90%;
+    text-align: center;
+    margin-top: 0;
+}
+}
